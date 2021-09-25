@@ -1,8 +1,14 @@
 import json
+import sys
+import os
 
 def __main__():
+    if len(sys.argv) != 2:
+        print("usage: python wal-vivaldi.py output.css")
+        return
+    
     colors = {}
-    with open("/home/error/.cache/wal/colors.json", 'r') as file:
+    with open(os.path.expanduser('~') + "/.cache/wal/colors.json", 'r') as file:
         string = ""
         for line in file:
             string += line
@@ -60,7 +66,7 @@ def __main__():
 
     print(output)
 
-    with open("/opt/vivaldi/resources/vivaldi/style/wal.css", 'w') as file:
+    with open(sys.argv[1], 'w') as file:
         file.write(output)
 
 if __name__ == "__main__":
