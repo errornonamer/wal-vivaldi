@@ -1,0 +1,10 @@
+--- browser.html	2021-09-26 03:01:40.446930196 +0900
++++ browser_original.html	2021-09-26 01:48:25.224382077 +0900
+@@ -4,7 +4,6 @@
+     <!-- Keep the styling in sync with ./window.html -->
+     <meta charset="UTF-8" />
+     <title>Vivaldi</title>
+-    <link rel="stylesheet" href="style/wal.css" />
+     <link rel="stylesheet" href="style/common.css" />
+     <link rel="stylesheet" href="chrome://vivaldi-data/css-mods/css" />
+     <style>
