@@ -59,9 +59,9 @@ def __main__():
     --colorAccentBgFadedMost: {col["color3"]} !important;
     --colorAccentBorder: {col["color3"]} !important;
     --colorAccentBorderDark: {col["color1"]} !important;
-    --colorAccentFg: {col["color6"]} !important;
-    --colorAccentFgFaded: {col["color5"]} !important;
-    --colorAccentFgAlpha: {col["color6"]}40 !important;
+    --colorAccentFg: {col["color1"]} !important;
+    --colorAccentFgFaded: {col["color2"]} !important;
+    --colorAccentFgAlpha: {col["color1"]}40 !important;
 }}"""
 
     print(output)
