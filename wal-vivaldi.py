@@ -46,22 +46,22 @@ def __main__():
     --colorHighlightBgUnfocused: {col["color5"]} !important;
     --colorHighlightBgAlpha: {col["color6"]}1a !important;
     --colorHighlightBgDark: {col["color4"]} !important;
-    --colorHighlightFg: {col["color3"]} !important;
-    --colorHighlightFgAlpha: {col["color3"]}80 !important;
-    --colorHighlightFgAlphaHeavy: {col["color1"]}40 !important;
-    --colorAccentBg: {col["color3"]} !important;
-    --colorAccentBgAlpha: {col["color3"]}66 !important;
-    --colorAccentBgAlphaHeavy: {col["color1"]}40 !important;
-    --colorAccentBgDark: {col["color3"]} !important;
-    --colorAccentBgDarker: {col["color1"]} !important;
-    --colorAccentBgFaded: {col["color3"]} !important;
-    --colorAccentBgFadedMore: {col["color3"]} !important;
-    --colorAccentBgFadedMost: {col["color3"]} !important;
+    --colorHighlightFg: {col["color2"]} !important;
+    --colorHighlightFgAlpha: {col["color2"]}80 !important;
+    --colorHighlightFgAlphaHeavy: {col["color2"]}40 !important;
+    --colorAccentBg: {col["color2"]} !important;
+    --colorAccentBgAlpha: {col["color2"]}66 !important;
+    --colorAccentBgAlphaHeavy: {col["color2"]}40 !important;
+    --colorAccentBgDark: {col["color2"]} !important;
+    --colorAccentBgDarker: {col["color2"]} !important;
+    --colorAccentBgFaded: {col["color2"]} !important;
+    --colorAccentBgFadedMore: {col["color2"]} !important;
+    --colorAccentBgFadedMost: {col["color2"]} !important;
     --colorAccentBorder: {col["color3"]} !important;
-    --colorAccentBorderDark: {col["color1"]} !important;
-    --colorAccentFg: {col["color6"]} !important;
-    --colorAccentFgFaded: {col["color5"]} !important;
-    --colorAccentFgAlpha: {col["color6"]}40 !important;
+    --colorAccentBorderDark: {col["color3"]} !important;
+    --colorAccentFg: {fg} !important;
+    --colorAccentFgFaded: {fg} !important;
+    --colorAccentFgAlpha: {fg}40 !important;
 }}"""
 
     print(output)
