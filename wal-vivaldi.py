@@ -20,48 +20,64 @@ def __main__():
     col = colors["colors"]
 
     output = f""":root {{
-    --colorFg: {fg} !important;
-    --colorFgAlpha: {fg}1a !important;
-    --colorFgIntense: {fg} !important;
-    --colorFgFaded: {fg} !important;
-    --colorFgFadedMore: {fg} !important;
-    --colorFgFadedMost: {fg} !important;
-    --colorBg: {bg} !important;
-    --colorBgAlpha: {bg}e6 !important;
-    --colorBgAlphaHeavy: {bg}a6 !important;
-    --colorBgAlphaHeavier: {bg}40 !important;
-    --colorBgAlphaBlur: {bg}f2 !important;
-    --colorBgDark: {bg} !important;
-    --colorBgDarker: {bg} !important;
-    --colorBgLight: {bg} !important;
-    --colorBgLighter: {bg} !important;
-    --colorBgLightIntense: {bg} !important;
-    --colorBgIntense: {bg} !important;
-    --colorBgIntenser: {bg} !important;
-    --colorBgIntserAlpha: {bg}eb !important;
-    --colorBgInverse: {bg} !important;
-    --colorBgInverser: {bg} !important;
-    --colorBgFaded: {bg} !important;
-    --colorHighlightBg: {col["color6"]} !important;
-    --colorHighlightBgUnfocused: {col["color5"]} !important;
-    --colorHighlightBgAlpha: {col["color6"]}1a !important;
-    --colorHighlightBgDark: {col["color4"]} !important;
-    --colorHighlightFg: {col["color2"]} !important;
-    --colorHighlightFgAlpha: {col["color2"]}80 !important;
-    --colorHighlightFgAlphaHeavy: {col["color2"]}40 !important;
-    --colorAccentBg: {col["color2"]} !important;
-    --colorAccentBgAlpha: {col["color2"]}66 !important;
-    --colorAccentBgAlphaHeavy: {col["color2"]}40 !important;
-    --colorAccentBgDark: {col["color2"]} !important;
-    --colorAccentBgDarker: {col["color2"]} !important;
-    --colorAccentBgFaded: {col["color2"]} !important;
-    --colorAccentBgFadedMore: {col["color2"]} !important;
-    --colorAccentBgFadedMost: {col["color2"]} !important;
-    --colorAccentBorder: {col["color3"]} !important;
-    --colorAccentBorderDark: {col["color3"]} !important;
-    --colorAccentFg: {fg} !important;
-    --colorAccentFgFaded: {fg} !important;
-    --colorAccentFgAlpha: {fg}40 !important;
+    --customTabBar: transparent;
+    --customFg: {fg};
+    --customFgAlpha: {fg}1a;
+    --customFgIntense: {fg};
+    --customFgFaded: {fg};
+    --customFgFadedMore: {fg};
+    --customFgFadedMost: {fg};
+    --customBg: {bg};
+    --customBgAlpha: {bg}e6;
+    --customBgAlphaHeavy: {bg}a6;
+    --customBgAlphaHeavier: {bg}40;
+    --customBgAlphaBlur: {bg}f2;
+    --customBgDark: {bg};
+    --customBgDarker: {bg};
+    --customBgLight: {bg};
+    --customBgLighter: {bg};
+    --customBgLightIntense: {bg};
+    --customBgIntense: {bg};
+    --customBgIntenser: {bg};
+    --customBgIntserAlpha: {bg}eb;
+    --customBgInverse: {bg};
+    --customBgInverser: {bg};
+    --customBgFaded: {bg};
+    --customHighlightBg: {col["color6"]};
+    --customHighlightBgUnfocused: {col["color5"]};
+    --customHighlightBgAlpha: {col["color6"]}1a;
+    --customHighlightBgDark: {col["color4"]};
+    --customHighlightFg: {col["color2"]};
+    --customHighlightFgAlpha: {col["color2"]}80;
+    --customHighlightFgAlphaHeavy: {col["color2"]}40;
+    --customAccentBg: {col["color2"]};
+    --customAccentBgAlpha: {col["color2"]}66;
+    --customAccentBgAlphaHeavy: {col["color2"]}40;
+    --customAccentBgDark: {col["color2"]};
+    --customAccentBgDarker: {col["color2"]};
+    --customAccentBgFaded: {col["color2"]};
+    --customAccentBgFadedMore: {col["color2"]};
+    --customAccentBgFadedMost: {col["color2"]};
+    --customAccentBorder: {col["color3"]};
+    --customAccentBorderDark: {col["color3"]};
+    --customAccentFg: {fg};
+    --customAccentFgFaded: {fg};
+    --customAccentFgAlpha: {fg}40;
+    --customBorder: #1c1c1c;
+    --customBorderDisabled: #242424;
+    --customBorderSubtle: #222222;
+    --customBorderIntense: #0c0c0c;
+    --customSuccessBg: #06a700;
+    --customSuccessBgAlpha: #06a7001a;
+    --customSuccessFg: #ffffff;
+    --customWarningBg: #efaf00;
+    --customWarningBgAlpha: #efaf001a;
+    --customWarningFg: #000000;
+    --customErrorBg: #c64539;
+    --customErrorBgAlpha: #c645391a;
+    --customErrorFg: #ffffff;
+    --customWindowBg: #1d1e21;
+    --customWindowFg: #ffffff;
 }}"""
 
     print(output)
@@ -71,3 +87,4 @@ def __main__():
 
 if __name__ == "__main__":
     __main__()
+
