@@ -44,9 +44,9 @@ def __main__():
     --customBgInverser: {bg};
     --customBgFaded: {bg};
     --customHighlightBg: {col["color6"]};
-    --customHighlightBgUnfocused: {col["color5"]};
+    --customHighlightBgUnfocused: {col["color6"]};
     --customHighlightBgAlpha: {col["color6"]}1a;
-    --customHighlightBgDark: {col["color4"]};
+    --customHighlightBgDark: {col["color6"]};
     --customHighlightFg: {col["color2"]};
     --customHighlightFgAlpha: {col["color2"]}80;
     --customHighlightFgAlphaHeavy: {col["color2"]}40;
@@ -63,21 +63,21 @@ def __main__():
     --customAccentFg: {fg};
     --customAccentFgFaded: {fg};
     --customAccentFgAlpha: {fg}40;
-    --customBorder: #1c1c1c;
-    --customBorderDisabled: #242424;
-    --customBorderSubtle: #222222;
-    --customBorderIntense: #0c0c0c;
-    --customSuccessBg: #06a700;
-    --customSuccessBgAlpha: #06a7001a;
-    --customSuccessFg: #ffffff;
-    --customWarningBg: #efaf00;
-    --customWarningBgAlpha: #efaf001a;
-    --customWarningFg: #000000;
-    --customErrorBg: #c64539;
-    --customErrorBgAlpha: #c645391a;
-    --customErrorFg: #ffffff;
-    --customWindowBg: #1d1e21;
-    --customWindowFg: #ffffff;
+    --customBorder: var(--colorBorder);
+    --customBorderDisabled: var(--colorBorderDisabled);
+    --customBorderSubtle: var(--colorBorderSubtle);
+    --customBorderIntense: var(--colorBorderIntense);
+    --customSuccessBg: var(--colorSuccessBg);
+    --customSuccessBgAlpha: var(--colorSuccessBgAlpha);
+    --customSuccessFg: var(--colorSuccessFg);
+    --customWarningBg: var(--colorWarningBg);
+    --customWarningBgAlpha: var(--colorWarningBgAlpha);
+    --customWarningFg: var(--colorWarningFg);
+    --customErrorBg: var(--colorErrorBg);
+    --customErrorBgAlpha: var(--colorErrorBgAlpha);
+    --customErrorFg: var(--colorErrorFg);
+    --customWindowBg: {bg};
+    --customWindowFg: {fg};
 }}"""
 
     print(output)
