@@ -1,13 +1,12 @@
+#!/usr/bin/python
 import json
-import sys
 import os
 
-def generate(outfile: str):
+def generate():
     colors = {}
 
     with open(os.path.expanduser('~') + "/.cache/wal/colors.json", 'r') as file:
         colors = json.loads(file.read())
-        print(colors)
     
     bg = colors["special"]["background"]
     fg = colors["special"]["foreground"]
@@ -74,15 +73,11 @@ def generate(outfile: str):
     --customWindowFg: {fg};
 }}"""
 
-    with open(outfile, 'w') as file:
+    with open("./wal.css", 'w') as file:
         file.write(output)
 
 def __main__():
-    if len(sys.argv) != 2:
-        print("usage: python wal-vivaldi.py output.css")
-        return
-
-    generate(sys.argv[1])
+    generate()
     
 
 if __name__ == "__main__":
