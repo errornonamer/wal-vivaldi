@@ -2,17 +2,11 @@ import json
 import sys
 import os
 
-def __main__():
-    if len(sys.argv) != 2:
-        print("usage: python wal-vivaldi.py output.css")
-        return
-    
+def generate(outfile: str):
     colors = {}
+
     with open(os.path.expanduser('~') + "/.cache/wal/colors.json", 'r') as file:
-        string = ""
-        for line in file:
-            string += line
-        colors = json.loads(string)
+        colors = json.loads(file.read())
         print(colors)
     
     bg = colors["special"]["background"]
@@ -80,10 +74,16 @@ def __main__():
     --customWindowFg: {fg};
 }}"""
 
-    print(output)
-
-    with open(sys.argv[1], 'w') as file:
+    with open(outfile, 'w') as file:
         file.write(output)
+
+def __main__():
+    if len(sys.argv) != 2:
+        print("usage: python wal-vivaldi.py output.css")
+        return
+
+    generate(sys.argv[1])
+    
 
 if __name__ == "__main__":
     __main__()

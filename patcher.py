@@ -1,6 +1,6 @@
 import shutil
 
-def __main__():
+def patch():
     resource_path = "/opt/vivaldi/resources/vivaldi"
     shutil.copy2(f"{resource_path}/style/common.css", f"{resource_path}/style/common_backup.css")
 
@@ -10,5 +10,5 @@ def __main__():
                 output.write(line.replace("--color", "--custom"))
 
 if __name__ == "__main__":
-    __main__()
+    patch()
 
